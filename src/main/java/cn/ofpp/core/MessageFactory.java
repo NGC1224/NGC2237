@@ -50,18 +50,18 @@ public class MessageFactory {
         WeatherInfo weather = GaodeUtil.getNowWeatherInfo(getAdcCode(friend.getProvince(), friend.getCity()));
         RandomAncientPoetry.AncientPoetry ancientPoetry = RandomAncientPoetry.getNext();
         return List.of(
-                TemplateDataBuilder.builder().name("friendName").value(friend.getFullName()).color("#D91AD9").build(),
-                TemplateDataBuilder.builder().name("howOld").value(friend.getHowOld().toString()).color("#F77234").build(),
+                TemplateDataBuilder.builder().name("friendName").value(friend.getFullName()).color("#165DFF").build(),
+                TemplateDataBuilder.builder().name("howOld").value(friend.getHowOld().toString()).color("#37D4CF").build(),
                 TemplateDataBuilder.builder().name("howLongLived").value(friend.getHowLongLived()).color("#437004").build(),
-                TemplateDataBuilder.builder().name("nextBirthday").value(friend.getNextBirthdayDays()).color("#771F06").build(),
+                TemplateDataBuilder.builder().name("nextBirthday").value(friend.getNextBirthdayDays()).color("#F77234").build(),
                 TemplateDataBuilder.builder().name("nextMemorialDay").value(friend.getNextMemorialDay()).color("#551DB0").build(),
                 TemplateDataBuilder.builder().name("province").value(friend.getProvince()).color("#F53F3F").build(),
-                TemplateDataBuilder.builder().name("city").value(friend.getCity()).color("#FADC19").build(),
+                TemplateDataBuilder.builder().name("city").value(friend.getCity()).color("#37D4CF").build(),
                 TemplateDataBuilder.builder().name("weather").value(weather.getWeather()).color("#00B42A").build(),
                 TemplateDataBuilder.builder().name("temperature").value(weather.getTemperature()).color("#722ED1").build(),
                 TemplateDataBuilder.builder().name("winddirection").value(weather.getWinddirection()).color("#F5319D").build(),
                 TemplateDataBuilder.builder().name("windpower").value(weather.getWindpower()).color("#3491FA").build(),
-                TemplateDataBuilder.builder().name("humidity").value(weather.getHumidity()).color("#F77234").build(),
+                TemplateDataBuilder.builder().name("humidity").value(weather.getHumidity()).color("#4CD263").build(),
                 TemplateDataBuilder.builder().name("author").value(ancientPoetry.getAuthor()).color("#F53F3F").build(),
                 TemplateDataBuilder.builder().name("origin").value(ancientPoetry.getOrigin()).color("#F53F3F").build(),
                 TemplateDataBuilder.builder().name("content").value(ancientPoetry.getContent()).color("#F53F3F").build()
